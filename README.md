@@ -5,4 +5,4 @@ A customizable React toast component to display success, error, and loading noti
 ## Installation
 
 ```bash
-npm install my-react-toast
+npm i @razalp/toastbox

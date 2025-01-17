@@ -1,6 +1,7 @@
+'use client'
 
 import { useToast } from '../components/ToastContext';
-
+import './ToastTester.css';
 
 export const ToastTester = () => {
   const { showToast } = useToast();
@@ -28,35 +29,26 @@ export const ToastTester = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen gap-4 p-4">
-      <h1 className="text-2xl font-bold mb-4">Toast Component Tester</h1>
-      <button
-        onClick={testSuccessToast}
-        className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
-      >
-        Show Success Toast
-      </button>
-
-      <button
-        onClick={testErrorToast}
-        className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
-      >
-        Show Error Toast
-      </button>
-
-      <button
-        onClick={testLoadingToast}
-        className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-      >
-        Show Loading Toast
-      </button>
-
-      <button
-        onClick={testMultipleToasts}
-        className="px-4 py-2 bg-purple-500 text-white rounded hover:bg-purple-600"
-      >
-        Test Multiple Toasts
-      </button>
+    <div className="toast-tester-container">
+      <div className="toast-tester-card">
+        <h1 className="toast-tester-title">Toast Tester</h1>
+        <p className="toast-tester-description">Click the buttons to test different toast notifications</p>
+        <div className="toast-tester-buttons">
+          <button onClick={testSuccessToast} className="toast-button success">
+            Show Success Toast
+          </button>
+          <button onClick={testErrorToast} className="toast-button error">
+            Show Error Toast
+          </button>
+          <button onClick={testLoadingToast} className="toast-button loading">
+            Show Loading Toast
+          </button>
+          <button onClick={testMultipleToasts} className="toast-button multiple">
+            Test Multiple Toasts
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
+

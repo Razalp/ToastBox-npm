@@ -1,31 +1,27 @@
 {
-  "name": "toastbox",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "@razalp/toastbox",
+  "version": "1.0.0",
+  "description": "A custom toast notification component for React.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "dev": "vite",
-   "build": "vite build",
-   "prepare": "npm run build",
+    "build": "vite build",
+    "prepare": "npm run build",
     "preview": "vite preview",
     "lint": "eslint ."
-
   },
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@eslint/js": "^9.17.0",
-    "@types/react": "^18.3.18",
-    "@types/react-dom": "^18.3.5",
-    "@vitejs/plugin-react": "^4.3.4",
-    "eslint": "^9.17.0",
-    "eslint-plugin-react-hooks": "^5.0.0",
-    "eslint-plugin-react-refresh": "^0.4.16",
-    "globals": "^15.14.0",
+    "vite": "^6.0.5",
     "typescript": "~5.6.2",
-    "typescript-eslint": "^8.18.2",
-    "vite": "^6.0.5"
-  }
+    "eslint": "^9.17.0"
+  },
+  "keywords": ["toast", "react", "notification", "component"],
+  "author": "Your Name",
+  "license": "MIT",
+  "private": false
 }
